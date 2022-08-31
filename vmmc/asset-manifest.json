@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vmmc/static/css/main.11cc3a78.css",
+    "main.js": "/vmmc/static/js/main.071040f4.js",
+    "static/js/787.d52b2bc2.chunk.js": "/vmmc/static/js/787.d52b2bc2.chunk.js",
+    "index.html": "/vmmc/index.html",
+    "main.11cc3a78.css.map": "/vmmc/static/css/main.11cc3a78.css.map",
+    "main.071040f4.js.map": "/vmmc/static/js/main.071040f4.js.map",
+    "787.d52b2bc2.chunk.js.map": "/vmmc/static/js/787.d52b2bc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11cc3a78.css",
+    "static/js/main.071040f4.js"
+  ]
+}

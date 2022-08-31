@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+.wrapper .doc .page {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 24px 1fr 24px;
+  gap: 0px 0px;
+  justify-content: stretch;
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 16.5in;
+  height: 11.7in;
+  margin: 1cm;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1cm;
+}
+.wrapper .doc .page .headerPage {
+  grid-area: 1/1/2/2;
+  height: 24px;
+  border-bottom: 1px solid #333;
+  font-size: 0.8em;
+  line-height: 24px;
+}
+.wrapper .doc .page .subPage {
+  grid-area: 2/1/3/2;
+}
+.wrapper .doc .page .subPage p {
+  padding: 21px 0 8px;
+  margin: 0;
+}
+.wrapper .doc .page .subPage p span {
+  margin-right: 200px;
+}
+.wrapper .doc .page .subPage .type_one {
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+.wrapper .doc .page .subPage .type_one thead {
+  background-color: #000;
+  color: #fff;
+}
+.wrapper .doc .page .subPage .type_one thead tr th:nth-child(2n) {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+.wrapper .doc .page .subPage .type_one thead tr .title {
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
+}
+.wrapper .doc .page .subPage .type_one thead tr .subtitle {
+  width: auto;
+  height: 90px;
+  vertical-align: bottom;
+  padding-bottom: 8px;
+  font-size: 10px;
+  font-weight: 300;
+}
+.wrapper .doc .page .subPage .type_one thead tr .subtitle .vertical {
+  display: block;
+  margin: auto 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  max-width: 15px;
+}
+.wrapper .doc .page .subPage .type_one tbody tr {
+  border: 1px solid;
+}
+.wrapper .doc .page .subPage .type_one tbody tr td {
+  min-width: 20px;
+  height: 30px;
+  border: 1px solid #000;
+  text-align: center;
+}
+.wrapper .doc .page .subPage .type_one tbody tr th {
+  min-width: 20px;
+  border: 1px solid #FFF;
+}
+.wrapper .doc .page .subPage .type_one tbody tr .nvcr {
+  border-right: 1px solid #000;
+}
+.wrapper .doc .page .subPage .type_one tbody tr .ctyp1 {
+  width: 100px;
+}
+.wrapper .doc .page .subPage .type_two {
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+.wrapper .doc .page .subPage .type_two thead {
+  background-color: #000;
+  color: #fff;
+}
+.wrapper .doc .page .subPage .type_two thead tr th:nth-child(2n) {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+.wrapper .doc .page .subPage .type_two thead tr .title {
+  font-size: 12px;
+  text-align: center;
+}
+.wrapper .doc .page .subPage .type_two thead tr .subtitle {
+  width: auto;
+  min-height: 90px;
+  vertical-align: bottom;
+  padding-bottom: 8px;
+  font-size: 10px;
+}
+.wrapper .doc .page .subPage .type_two thead tr .date {
+  min-width: 90px !important;
+}
+.wrapper .doc .page .subPage .type_two thead tr .comments {
+  min-width: 200px;
+}
+.wrapper .doc .page .subPage .type_two tbody tr {
+  border: 1px solid;
+}
+.wrapper .doc .page .subPage .type_two tbody tr td {
+  min-width: 20px;
+  height: 30px;
+  border: 1px solid #000;
+  text-align: center;
+}
+.wrapper .doc .page .subPage .type_two tbody tr th {
+  min-width: 20px;
+  border: 1px solid #FFF;
+}
+.wrapper .doc .page .subPage .type_two tbody tr .nvcr {
+  border-right: 1px solid #000;
+}
+.wrapper .doc .page .subPage .type_two tbody tr .ctyp1 {
+  width: 100px;
+}
+.wrapper .doc .page .subPage .verticalTableHeader {
+  text-align: center;
+  white-space: nowrap;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+.wrapper .doc .page .subPage .verticalTableHeader::before {
+  content: "";
+  padding-top: 140%;
+  /* takes width as reference, + 10% for faking some extra padding */
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrapper .doc .page .subPage .card1 {
+  float: left;
+  padding: 8px;
+  margin: 4px 8px 2px 0;
+  border: 2px solid #000;
+}
+.wrapper .doc .page .subPage .card1 table {
+  border: 1px solid #FFF;
+}
+.wrapper .doc .page .subPage .card1 table tbody tr {
+  border: 1px solid;
+}
+.wrapper .doc .page .subPage .card1 table tbody tr td {
+  border: 1px solid #FFF;
+  text-align: left;
+  padding: 0 8px 0 0;
+  font-size: 10px;
+  height: 20px;
+}
+.wrapper .doc .page .subPage .card1 .title {
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  font-weight: 600;
+}
+.wrapper .doc .page .subPage .card1 .cont {
+  float: left;
+  margin-right: 8px;
+}
+.wrapper .doc .page .subPage .card2,
+.wrapper .doc .page .subPage .card3,
+.wrapper .doc .page .subPage .card4,
+.wrapper .doc .page .subPage .card5,
+.wrapper .doc .page .subPage .card6 {
+  float: left;
+  padding: 8px;
+  margin: 0px 8px 8px 0;
+}
+.wrapper .doc .page .subPage .card2 p,
+.wrapper .doc .page .subPage .card3 p,
+.wrapper .doc .page .subPage .card4 p,
+.wrapper .doc .page .subPage .card5 p,
+.wrapper .doc .page .subPage .card6 p {
+  text-align: left;
+  padding: 0 8px 0 0;
+  font-size: 10px;
+}
+.wrapper .doc .page .subPage .card2 .title,
+.wrapper .doc .page .subPage .card3 .title,
+.wrapper .doc .page .subPage .card4 .title,
+.wrapper .doc .page .subPage .card5 .title,
+.wrapper .doc .page .subPage .card6 .title {
+  width: 100%;
+  height: auto;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.wrapper .doc .page .subPage .card2 {
+  width: 15%;
+}
+.wrapper .doc .page .subPage .card3 {
+  width: 23%;
+}
+.wrapper .doc .page .subPage .card4 {
+  width: 18%;
+}
+.wrapper .doc .page .subPage .card5 {
+  width: 18%;
+}
+.wrapper .doc .page .subPage .card6 {
+  width: 15%;
+}
+.wrapper .doc .page .bottomPage {
+  grid-area: 3/1/4/2;
+  height: 24px;
+  border-top: 1px solid #333;
+  font-size: 0.8em;
+  line-height: 24px;
+}
+.wrapper .doc .page .bottomPage div:nth-child(1) {
+  float: left;
+}
+.wrapper .doc .page .bottomPage div:nth-child(2) {
+  float: right;
+}
+.wrapper .btn-primary {
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  margin: 0 45%;
+}
+.wrapper .btn-primary .myButton:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+.wrapper .btn-primary .myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media print {
+  .doc .page {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 24px 1fr 24px;
+    gap: 0px 0px;
+    justify-content: stretch;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    size: A3 landscape;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    box-shadow: none;
+    padding: 0.5cm 1cm;
+  }
+  .doc .page .headerPage {
+    grid-area: 1/1/2/2;
+    height: 24px;
+    border-bottom: 1px solid #333;
+    font-size: 0.8em;
+    line-height: 24px;
+  }
+  .doc .page .subPage {
+    grid-area: 2/1/3/2;
+  }
+  .doc .page .subPage p {
+    padding: 21px 0 8px;
+    margin: 0;
+  }
+  .doc .page .subPage p span {
+    margin-right: 200px;
+  }
+  .doc .page .subPage .type_one {
+    border-collapse: collapse;
+    border: 2px solid #000;
+  }
+  .doc .page .subPage .type_one thead {
+    background-color: #000;
+    color: #fff;
+  }
+  .doc .page .subPage .type_one thead tr th:nth-child(2n) {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+  }
+  .doc .page .subPage .type_one thead tr .title {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .doc .page .subPage .type_one thead tr .subtitle {
+    width: auto;
+    height: 90px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .doc .page .subPage .type_one thead tr .subtitle .vertical {
+    display: block;
+    margin: auto 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    max-width: 15px;
+  }
+  .doc .page .subPage .type_one tbody tr {
+    border: 1px solid;
+  }
+  .doc .page .subPage .type_one tbody tr td {
+    min-width: 20px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+  }
+  .doc .page .subPage .type_one tbody tr th {
+    min-width: 20px;
+    border: 1px solid #FFF;
+  }
+  .doc .page .subPage .type_one tbody tr .nvcr {
+    border-right: 1px solid #000;
+  }
+  .doc .page .subPage .type_one tbody tr .ctyp1 {
+    width: 100px;
+  }
+  .doc .page .subPage .type_two {
+    border-collapse: collapse;
+    border: 2px solid #000;
+  }
+  .doc .page .subPage .type_two thead {
+    background-color: #000;
+    color: #fff;
+  }
+  .doc .page .subPage .type_two thead tr th:nth-child(2n) {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+  }
+  .doc .page .subPage .type_two thead tr .title {
+    font-size: 12px;
+    text-align: center;
+  }
+  .doc .page .subPage .type_two thead tr .subtitle {
+    width: auto;
+    min-height: 90px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+    font-size: 10px;
+  }
+  .doc .page .subPage .type_two thead tr .date {
+    min-width: 90px !important;
+  }
+  .doc .page .subPage .type_two thead tr .comments {
+    min-width: 200px;
+  }
+  .doc .page .subPage .type_two tbody tr {
+    border: 1px solid;
+  }
+  .doc .page .subPage .type_two tbody tr td {
+    min-width: 20px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+  }
+  .doc .page .subPage .type_two tbody tr th {
+    min-width: 20px;
+    border: 1px solid #FFF;
+  }
+  .doc .page .subPage .type_two tbody tr .nvcr {
+    border-right: 1px solid #000;
+  }
+  .doc .page .subPage .type_two tbody tr .ctyp1 {
+    width: 100px;
+  }
+  .doc .page .subPage .verticalTableHeader {
+    text-align: center;
+    white-space: nowrap;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+  }
+  .doc .page .subPage .verticalTableHeader::before {
+    content: "";
+    padding-top: 140%;
+    /* takes width as reference, + 10% for faking some extra padding */
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .doc .page .subPage .card1 {
+    float: left;
+    padding: 8px;
+    margin: 4px 8px 8px 0;
+    border: 2px solid #000;
+  }
+  .doc .page .subPage .card1 table {
+    border: 1px solid #FFF;
+  }
+  .doc .page .subPage .card1 table tbody tr {
+    border: 1px solid;
+  }
+  .doc .page .subPage .card1 table tbody tr td {
+    border: 1px solid #FFF;
+    text-align: left;
+    padding: 0 8px 0 0;
+    font-size: 10px;
+    height: 20px;
+  }
+  .doc .page .subPage .card1 .title {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .doc .page .subPage .card1 .cont {
+    float: left;
+    margin-right: 8px;
+  }
+  .doc .page .subPage .card2,
+.doc .page .subPage .card3,
+.doc .page .subPage .card4,
+.doc .page .subPage .card5,
+.doc .page .subPage .card6 {
+    float: left;
+    padding: 0 8px;
+    margin: 0px 8px;
+  }
+  .doc .page .subPage .card2 p,
+.doc .page .subPage .card3 p,
+.doc .page .subPage .card4 p,
+.doc .page .subPage .card5 p,
+.doc .page .subPage .card6 p {
+    text-align: left;
+    padding: 0 8px 0 0;
+    font-size: 10px;
+  }
+  .doc .page .subPage .card2 .title,
+.doc .page .subPage .card3 .title,
+.doc .page .subPage .card4 .title,
+.doc .page .subPage .card5 .title,
+.doc .page .subPage .card6 .title {
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .doc .page .subPage .card2 {
+    width: 15%;
+  }
+  .doc .page .subPage .card3 {
+    width: 23%;
+  }
+  .doc .page .subPage .card4 {
+    width: 18%;
+  }
+  .doc .page .subPage .card5 {
+    width: 18%;
+  }
+  .doc .page .subPage .card6 {
+    width: 15%;
+  }
+  .doc .page .bottomPage {
+    grid-area: 3/1/4/2;
+    height: 24px;
+    border-top: 1px solid #333;
+    font-size: 0.8em;
+    line-height: 24px;
+  }
+  .doc .page .bottomPage div:nth-child(1) {
+    float: left;
+  }
+  .doc .page .bottomPage div:nth-child(2) {
+    float: right;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
